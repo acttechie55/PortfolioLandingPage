@@ -1,0 +1,77 @@
+/**********Adding Social Icons to Site*************/
+@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+/**********Adding Josefin Font to Site*************/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+/**********Universal Variables for Body************/
+body, html {
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: black;
+  background-attachment: fixed;
+  background-size: no-repeat;
+  height: 100%;
+}
+
+#wrap {
+  min-height: 90%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/**********Variables for Container****************/
+.container {
+	.first-row {
+    border: .75em solid yellow;
+    margin-top: 15em;
+    h1 {
+      font-weight: 700;
+      letter-spacing: .5em;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+  }
+}
+/**********Variables for Footer****************/
+.footer {
+	padding: 50px 0; 
+	text-align: center;
+  bottom: 0;
+  height: 60px;
+  .social { 
+	display: inline-block; 
+	width: 70px; 
+	height: 70px; 
+	margin: 0 auto; 
+	line-height: 70px; 
+	font-family: 'entypo', sans-serif;
+	font-size: 35px; 
+	text-align: center; 
+	color: #444444; 
+	overflow: hidden; 
+	transition: color .3s;
+  box-shadow: 0 0 0 0 yellow;
+  &:hover {
+  color: lightgoldenrodyellow;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+  @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}   
+  }
+ }
+} 
+
+a:link {
+  text-decoration: none;
+}
