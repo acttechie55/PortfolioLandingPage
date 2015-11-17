@@ -13,6 +13,7 @@ body, html {
   background-attachment: fixed;
   background-size: no-repeat;
   height: 100%;
+  overflow: hidden;
 }
 
 #wrap {
@@ -38,6 +39,24 @@ body, html {
     }
   }
 }
+/**********Variables for Media Queries****************/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) { 
+  .container {
+    .first-row {
+      margin-top: 9em;
+      h1 {
+        letter-spacing: .1em;
+      }
+    }
+  }
+  #push {
+    height: 8em;
+  }
+}
+
+
 /**********Variables for Footer****************/
 .footer {
 	padding: 50px 0; 

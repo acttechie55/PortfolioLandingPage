@@ -1,6 +1,6 @@
-@charset "UTF-8";
-/**********Adding Social Icons to Site*************/
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+/**********Adding Social Icons to Site*************/
+@charset "UTF-8";
 @font-face {
   font-family: 'entypo';
   font-style: normal;
@@ -1915,6 +1915,7 @@ html {
   background-attachment: fixed;
   background-size: no-repeat;
   height: 100%;
+  overflow: hidden;
 }
 #wrap {
   min-height: 90%;
@@ -1935,6 +1936,18 @@ html {
 }
 .container .first-row h3 {
   text-align: center;
+}
+/**********Variables for Media Queries****************/
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) {
+  .container .first-row {
+    margin-top: 9em;
+  }
+  .container .first-row h1 {
+    letter-spacing: .1em;
+  }
+  #push {
+    height: 8em;
+  }
 }
 /**********Variables for Footer****************/
 .footer {
